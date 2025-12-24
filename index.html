@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Navigator - המדריך המקיף לבינה מלאכותית</title>
+    <link rel="icon" type="image/x-icon" href="images/SMALL_LOGO.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="images/LOGO_F.png" alt="Logo" class="logo-image">
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="item.html">תוצרים</a></li>
+                <li><a href="dictionary.html">מילון מונחים</a></li>
+                <li><a href="about.html">אודותינו</a></li>
+                <li><a href="contact.html">צור קשר</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <video autoplay muted loop class="hero-video">
+            <source src="images/BACK.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>המדריך המקיף לבינה מלאכותית</h1>
+            <p>חקור את עולם ה-AI: מלמידת מכונה ועד מודלים גנרטיביים.</p>
+            <a href="contact.html" class="cta-button">התחל ללמוד עכשיו</a>
+        </div>
+    </section>
+
+    <section class="ai-types-overview">
+        <h2>הכר את עולם ה-AI</h2>
+        <div class="cards-container">
+
+            <div class="ai-card">
+                <i class="fas fa-comments card-icon"></i>
+                <h3>מודלי שפה</h3>
+                <p>הבנה וייצור של טקסט טבעי ויצירתי, כולל LLMs.</p>
+                <a href="language.html" class="learn-more-button">למד עוד</a>
+            </div>
+
+            <div class="ai-card">
+                <i class="fas fa-palette card-icon"></i>
+                <h3>יצירת תמונות</h3>
+                <p>ממודלי Diffusion ועד GANs - יצירת תמונות מפרומפטים טקסטואליים.</p>
+                <a href="photo.html" class="learn-more-button">למד עוד</a>
+            </div>
+
+            <div class="ai-card">
+                <i class="fas fa-code card-icon"></i>
+                <h3>כלי תכנות</h3>
+                <p>השלמת קוד, דיבוג (Debugging) ויצירת פונקציות שלמות בעזרת AI.</p>
+                <a href="cump_tools.html" class="learn-more-button">למד עוד</a>
+            </div>
+
+            <div class="ai-card">
+                <i class="fas fa-video card-icon"></i>
+                <h3>מוזיקה ווידאו</h3>
+                <p>יצירת פסקולים, עריכת וידאו אוטומטית והפקת קליפים מלאים.</p>
+                <a href="music.html" class="learn-more-button">למד עוד</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="benefits-and-community">
+        <div class="benefits">
+            <h2>למה ללמוד אצלנו?</h2>
+            <ul>
+                <li><i class="far fa-check-circle"></i> תוכן ברור, תמציתי ומדויק</li>
+                <li><i class="far fa-check-circle"></i> דוגמאות פרקטיות ומקרי בוחן</li>
+                <li><i class="far fa-check-circle"></i> מודולים שנכתבו על ידי מומחים</li>
+                <li><i class="far fa-check-circle"></i> המחשות ויזואליות אינטראקטיביות</li>
+            </ul>
+        </div>
+        <div class="community">
+            <div class="community-box">
+                <i class="fas fa-users"></i>
+                <h3>הצטרף לקהילה שלנו</h3>
+                <a href="contact.html" class="community-button">הרשם לעדכונים</a>
+            </div>
+            <div class="abstract-brain">
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI Navigator. כל הזכויות שמורות.</p>
+        <div class="footer-links">
+            <a href="#">מדיניות פרטיות</a> | 
+            <a href="#">תנאי שימוש</a>
+        </div>
+        <div class="social-links">
+            <a href="#" title="טוויטר"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="לינקדאין"><i class="fab fa-linkedin"></i></a>
+            <a href="#" title="פייסבוק"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </footer>
+
+    <!-- כפתור צ'אט דביק -->
+    <input type="checkbox" id="chatToggle" style="display: none;">
+    <label for="chatToggle" style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #ff8c00; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 1000; box-shadow: 0 4px 20px rgba(255, 140, 0, 0.4);">
+        <i class="fas fa-comments" style="color: #00d4ff; font-size: 24px;"></i>
+    </label>
+
+    <!-- חלון צ'אט דמה -->
+    <div id="chatWindow" style="position: fixed; bottom: 100px; right: 30px; width: 280px; height: 350px; background: #0f1a2e; border-radius: 20px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); border: 2px solid rgba(0, 212, 255, 0.3); display: none; flex-direction: column; z-index: 999;">
+        <div style="background: linear-gradient(135deg, #00d4ff 0%, #49c5b6 100%); padding: 15px 20px; border-radius: 18px 18px 0 0; color: white; font-weight: 600; display: flex; justify-content: space-between; align-items: center;">
+            <span>צ'אט תמיכה</span>
+            <label for="chatToggle" style="background: none; border: none; color: white; font-size: 18px; cursor: pointer;">&times;</label>
+        </div>
+        <div style="flex: 1; padding: 15px; overflow-y: auto; color: #e1e8f0;">
+            <div style="margin-bottom: 10px; padding: 8px 12px; border-radius: 12px; max-width: 90%; word-wrap: break-word; background: #2a3b5c; color: #e1e8f0; margin-right: auto; text-align: left; font-size: 0.9em;">
+                <strong>בוט תמיכה:</strong> שלום! איך אני יכול לעזור לך היום?
+            </div>
+        </div>
+        <div style="padding: 10px 12px; border-top: 1px solid rgba(0, 212, 255, 0.2); display: flex; gap: 6px;">
+            <input type="text" placeholder="הקלד הודעה..." style="flex: 1; padding: 6px 10px; border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 12px; background: #2a3b5c; color: white; outline: none; font-size: 0.85em;" disabled>
+            <button style="background: #00d4ff; border: none; color: white; padding: 6px 10px; border-radius: 12px; cursor: pointer; opacity: 0.6; font-size: 0.85em;">שלח</button>
+        </div>
+    </div>
+
+    <style>
+        #chatToggle:checked + label + #chatWindow {
+            display: flex !important;
+        }
+        
+        .menu-checkbox {
+            display: none;
+        }
+        
+        #menu-toggle:checked ~ .main-nav {
+            display: flex !important;
+        }
+    </style>
+
+</body>
+</html>

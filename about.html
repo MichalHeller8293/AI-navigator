@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אודותינו - AI Navigator</title>
+    <link rel="icon" type="image/x-icon" href="images/SMALL_LOGO.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="internal_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo"><img src="images/LOGO_F.png" alt="Logo" class="logo-image"></div>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="dictionary.html">מילון מונחים</a></li>
+                <li><a href="item.html"> תוצרים </a></li>
+                <li><a href="contact.html">צור קשר</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-container">
+       
+        <aside class="sidebar-nav">
+             <h3>קישורים חשובים</h3>
+            <ul>
+                <li><a href="#" class="active"><i class="fas fa-bullseye"></i> המשימה שלנו</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> הצוות שלנו</a></li>
+                <li><a href="course.html"><i class="fas fa-video"></i>הקורסים שלנו</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> צור קשר</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1>אודות AI Navigator</h1>
+            <p class="definition">
+                ברוכים הבאים למרכז המידע המוביל בישראל לכלים, טכנולוגיות ומושגים של בינה מלאכותית יוצרת.
+            </p>
+
+            <section class="theory-section">
+                <div class="usage-section">
+                    <div class="usage-image">
+                        <img src="images/image (19).png" alt="AI Navigator" class="usage-img">
+                    </div>
+                    <div class="usage-content">
+                        <h2>המשימה והייעוד שלנו</h2>
+                        <p>
+                            עולם הבינה המלאכותית משתנה בקצב מסחרר. המשימה של AI Navigator היא לפשט את המורכב, ולספק לכם ידע פרקטי, עדכני וממוקד על הכלים והמושגים החשובים ביותר שכל אחד צריך להכיר. אנו מחויבים להפוך את טכנולוגיית ה-AI לנגישה ושימושית עבור אנשי מקצוע, יזמים וכל מי שמעוניין להישאר בחזית הטכנולוגית.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="about-section">
+                <h2 style="margin-top: 30px;">מה מבדל אותנו?</h2>
+                <div class="value-props-container">
+                   
+                    <div class="tool-card small-card">
+                        <i class="fas fa-search tool-icon"></i>
+                        <h4>מידע ממוקד</h4>
+                        <p>התמקדות ביישומים המעשיים ביותר: יצירת תמונות, כתיבת קוד ומודלי שפה.</p>
+                    </div>
+
+                    <div class="tool-card small-card">
+                        <i class="fas fa-history tool-icon"></i>
+                        <h4>עדכונים שוטפים</h4>
+                        <p>מעקב צמוד אחר מודלים חדשים ועדכון הדפים שלנו באופן תדיר.</p>
+                    </div>
+
+                    <div class="tool-card small-card">
+                        <i class="fas fa-globe-americas tool-icon"></i>
+                        <h4>נגישות ושפה ברורה</h4>
+                        <p>הסברים בעברית פשוטה וברורה, מתאימים לכל רמת ידע.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr style="margin-top: 50px;">
+           
+            <section class="about-section">
+                <h2>הצוות שלנו</h2>
+                <div class="team-info">
+                    <p>
+                        AI Navigator הוקם על ידי צוות קטן של מפתחים ומחנכים בעלי ניסיון רב בתחום המידע והטכנולוגיה, המאמינים בכוחה של ההכשרה הדיגיטלית.
+                    </p>
+                    </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 AI Navigator. כל הזכויות שמורות.</p>
+    </footer>
+
+    <!-- כפתור צ'אט דביק -->
+    <input type="checkbox" id="chatToggle" style="display: none;">
+    <label for="chatToggle" style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #ff8c00; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 1000; box-shadow: 0 4px 20px rgba(255, 140, 0, 0.4);">
+        <i class="fas fa-comments" style="color: #00d4ff; font-size: 24px;"></i>
+    </label>
+
+    <!-- חלון צ'אט דמה -->
+    <div id="chatWindow" style="position: fixed; bottom: 100px; right: 30px; width: 280px; height: 350px; background: #0f1a2e; border-radius: 20px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); border: 2px solid rgba(0, 212, 255, 0.3); display: none; flex-direction: column; z-index: 999;">
+        <div style="background: linear-gradient(135deg, #00d4ff 0%, #49c5b6 100%); padding: 15px 20px; border-radius: 18px 18px 0 0; color: white; font-weight: 600; display: flex; justify-content: space-between; align-items: center;">
+            <span>צ'אט תמיכה</span>
+            <label for="chatToggle" style="background: none; border: none; color: white; font-size: 18px; cursor: pointer;">&times;</label>
+        </div>
+        <div style="flex: 1; padding: 15px; overflow-y: auto; color: #e1e8f0;">
+            <div style="margin-bottom: 10px; padding: 8px 12px; border-radius: 12px; max-width: 90%; word-wrap: break-word; background: #2a3b5c; color: #e1e8f0; margin-right: auto; text-align: left; font-size: 0.9em;">
+                <strong>בוט תמיכה:</strong> שלום! איך אני יכול לעזור לך היום?
+            </div>
+        </div>
+        <div style="padding: 10px 12px; border-top: 1px solid rgba(0, 212, 255, 0.2); display: flex; gap: 6px;">
+            <input type="text" placeholder="הקלד הודעה..." style="flex: 1; padding: 6px 10px; border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 12px; background: #2a3b5c; color: white; outline: none; font-size: 0.85em;" disabled>
+            <button style="background: #00d4ff; border: none; color: white; padding: 6px 10px; border-radius: 12px; cursor: pointer; opacity: 0.6; font-size: 0.85em;">שלח</button>
+        </div>
+    </div>
+
+    <style>
+        #chatToggle:checked + label + #chatWindow {
+            display: flex !important;
+        }
+        
+        .menu-checkbox {
+            display: none;
+        }
+        
+        #menu-toggle:checked ~ .main-nav {
+            display: flex !important;
+        }
+    </style>
+
+</body>
+</html>

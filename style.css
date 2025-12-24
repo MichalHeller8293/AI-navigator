@@ -1,0 +1,628 @@
+/* הגדרות גלובליות ואיפוס */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f1419;
+    color: #ffffff;
+    direction: rtl;
+    text-align: right;
+    line-height: 1.6;
+}
+
+a {
+    color: #5d9cec; /* כחול בהיר לקישורים */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* סרגל ניווט עליון */
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    background-color: rgba(10, 14, 21, 0.8);
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logo {
+    position: absolute;
+    right: 50px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 80px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin-right: 25px;
+}
+
+.main-nav a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s;
+    padding: 8px 15px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    display: block;
+    width: 110px;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+.main-nav a:hover {
+    color: #49c5b6;
+    text-decoration: none;
+    border-color: #49c5b6;
+    background-color: rgba(73, 197, 182, 0.1);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    padding: 150px 50px 100px 50px;
+    text-align: center;
+    margin-top: 0;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    z-index: -1;
+}
+
+
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+/* כפתור הנעה לפעולה ראשי - צבע הדגשה ירוק-ים */
+.cta-button {
+    display: inline-block;
+    background-color: #ff8c00; 
+    color: #ffffff; 
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #e67e00; /* גוון כהה יותר בהובר */
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+/* סקירת סוגי AI */
+.ai-types-overview {
+    padding: 60px 50px 100px 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.ai-types-overview h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ai-card {
+    background-color: #ffffff; /* רקע לבן */
+    color: #000000; /* כיתוב שחור */
+    padding: 25px 20px;
+    border-radius: 15px;
+    width: 23%; /* 4 ריבועים בשורה */
+    height: 320px; /* גובה מקוטן */
+    transition: transform 0.3s;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ai-card:hover {
+    transform: translateY(-5px);
+    background-color: #f5f5f5;
+}
+
+.card-icon {
+    font-size: 3.5em;
+    margin-bottom: 18px;
+}
+
+.fa-comments {
+    color: #5d9cec; /* כחול בהיר */
+}
+
+.fa-palette {
+    color: #9c27b0; /* סגול */
+}
+
+.fa-code {
+    color: #49c5b6; /* טורקיז */
+}
+
+.fa-video {
+    color: #0d47a1; /* כחול כהה יותר */
+}
+
+.ai-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.ai-card p {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+/* כפתור "למד עוד" בריבועים - כתום */
+.learn-more-button {
+    display: inline-block;
+    background-color: #ff8c00; /* כתום */
+    color: #ffffff; /* כיתוב לבן */
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: auto;
+}
+
+.learn-more-button:hover {
+    background-color: #e67e00;
+    text-decoration: none;
+}
+
+/* 4. קטע יתרונות וקהילה */
+.benefits-and-community {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: -50px;
+    padding-top: 110px;
+}
+
+.benefits {
+    width: 50%;
+    text-align: right;
+}
+
+.benefits h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.benefits ul {
+    list-style: none;
+    padding-right: 0;
+}
+
+.benefits ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.benefits ul li .fa-check-circle {
+    color: #49c5b6;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.community {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.community-box {
+    background-color: #1a2332;
+    padding: 20px 100px;
+    border-radius: 10px;
+    margin: 30px auto 20px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+}
+
+.community-box h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.community-box .fa-users {
+    font-size: 2em;
+    color: #49c5b6;
+    margin-bottom: 10px;
+}
+
+.community-button {
+    display: inline-block;
+    background-color: #ff8c00; /* כתום */
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.community-button:hover {
+    background-color: #e67e00;
+    text-decoration: none;
+}
+
+/* 5. פוטר (Footer) */
+footer {
+    background-color: #0f1419;
+    color: #ffffff;
+    padding: 20px 50px;
+    text-align: center;
+    border-top: 1px solid #2a375a;
+    font-size: 0.9em;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a, .social-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover, .footer-links a:hover {
+    color: #49c5b6;
+}
+
+.social-links .fab {
+    font-size: 1.3em;
+}
+
+.center-logo {
+    text-align: center;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-logo {
+    height: 180px;
+    width: auto;
+}
+
+/* כפתור צ'אט דביק */
+.chat-button {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 60px !important;
+    height: 60px !important;
+    background: linear-gradient(135deg, #00d4ff 0%, #49c5b6 100%) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 20px rgba(0, 212, 255, 0.4) !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    z-index: 1000 !important;
+    border: none !important;
+}
+
+.chat-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(0, 212, 255, 0.6);
+}
+
+.chat-button i {
+    color: white;
+    font-size: 24px;
+}
+
+/* חלון הצ'אט */
+.chat-window {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 350px;
+    height: 500px;
+    background: #0f1a2e;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 212, 255, 0.3);
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.chat-header {
+    background: linear-gradient(135deg, #00d4ff 0%, #49c5b6 100%);
+    padding: 15px 20px;
+    border-radius: 18px 18px 0 0;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    color: #e1e8f0;
+}
+
+.chat-input {
+    padding: 15px 20px;
+    border-top: 1px solid rgba(0, 212, 255, 0.2);
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 20px;
+    background: #2a3b5c;
+    color: white;
+    outline: none;
+}
+
+.chat-send {
+    background: #00d4ff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.chat-message {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background: #00d4ff;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+}
+
+.bot-message {
+    background: #2a3b5c;
+    color: #e1e8f0;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* תפריט המבורגר למסכים קטנים */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* הפעלת התפריט עם checkbox */
+.menu-checkbox {
+    display: none;
+}
+
+.menu-checkbox:checked ~ .main-nav {
+    display: flex !important;
+}
+
+.menu-checkbox:checked ~ .hamburger-menu span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-checkbox:checked ~ .hamburger-menu span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-checkbox:checked ~ .hamburger-menu span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* עיצוב רספונסיבי - media queries */
+@media (max-width: 768px) {
+    /* 1. הסתרת התפריט והפיכתו לכפתור המבורגר */
+    .main-header {
+        padding: 10px 20px;
+    }
+    
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(10, 14, 21, 0.95);
+        flex-direction: column;
+        padding: 20px;
+        z-index: 200;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .main-nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .hamburger-menu {
+        display: flex;
+        position: absolute;
+        left: 20px;
+        z-index: 101;
+    }
+    
+    /* 2. אלמנטי טופס ברוחב מלא */
+    input, textarea, select, .form-element {
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
+    
+    /* 3. כרטיסים ברוחב מלא */
+    .ai-card {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    
+    .cards-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* 4. צמצום שולים גדולים */
+    .hero-section {
+        padding: 120px 20px 80px 20px;
+    }
+    
+    .ai-types-overview {
+        padding: 40px 20px;
+    }
+    
+    .benefits-and-community {
+        padding: 40px 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .benefits, .community {
+        width: 100%;
+    }
+    
+    footer {
+        padding: 20px;
+    }
+    
+    /* התאמות נוספות למסכים קטנים */
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+    
+    .hero-content p {
+        font-size: 1.1em;
+    }
+    
+    .ai-types-overview h2 {
+        font-size: 1.8em;
+    }
+    
+    .benefits h2 {
+        font-size: 1.8em;
+    }
+    
+    .community-box {
+        padding: 20px 40px;
+    }
+    
+    /* חלון צ'אט רספונסיבי */
+    .chat-window {
+        width: 90%;
+        right: 5%;
+        bottom: 90px;
+    }
+}

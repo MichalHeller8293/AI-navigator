@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור קשר - AI Navigator</title>
+    <link rel="icon" type="image/x-icon" href="images/SMALL_LOGO.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="internal_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo"><img src="images/LOGO_F.png" alt="Logo" class="logo-image"></div>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="dictionary.html">מילון מונחים</a></li>
+                <li><a href="item.html">תוצרים</a></li>
+                <li><a href="about.html">אודותינו</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-container">
+
+        <aside class="sidebar-nav">
+            <h3 style="font-size: 1.3em;">דרכים נוספות ליצירת קשר</h3>
+            <ul class="contact-methods">
+                <li><i class="fas fa-envelope sidebar-icon"></i> דוא"ל: support@ainavigator.co.il</li>
+                <li><i class="fas fa-phone sidebar-icon"></i> טלפון: 053-456-7891 </li>
+                <li><i class="fas fa-map-marker-alt sidebar-icon"></i> משרד: מרכז הארץ (בתיאום)</li>
+            </ul>
+            <p class="sidebar-note" style="text-align: center; font-size: 0.85em; margin-top: 30px;">
+                אנו משתדלים להשיב לכל הפניות תוך 48 שעות עסקים.
+            </p>
+        </aside>
+
+        <main class="main-content">
+            <h1>צור קשר עם הצוות</h1>
+            <p class="definition">
+                יש לך שאלות על תוכן האתר, אופן הלמידה, רעיונות לשיתוף פעולה או שאת/ה רוצה לדווח על תקלה? השאר/י פרטים ואנו נחזור אליך
+                בהקדם.
+            </p>
+
+            <section class="contact-section">
+                <h2>שלח לנו הודעה</h2>
+
+                <form action="/submit_contact" method="POST" class="contact-form"
+                    style="display: flex; flex-direction: column; gap: 20px; width: 100%;">
+
+                    <div class="form-group" style="width: 100%;">
+                        <label for="name"
+                            style="display: block; margin-bottom: 8px; font-weight: 600; color: #00d4ff;">שם
+                            מלא:</label>
+                        <input type="text" id="name" name="name" required placeholder="השם שלך"
+                            style="width: 100%; padding: 15px; border: 2px solid rgba(0, 212, 255, 0.3); border-radius: 10px; background: #2a3b5c; color: #fff; font-size: 16px;">
+                    </div>
+
+                    <div class="form-group" style="width: 100%;">
+                        <label for="email"
+                            style="display: block; margin-bottom: 8px; font-weight: 600; color: #00d4ff;">כתובת
+                            דוא"ל:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@mail.com"
+                            style="width: 100%; padding: 15px; border: 2px solid rgba(0, 212, 255, 0.3); border-radius: 10px; background: #2a3b5c; color: #fff; font-size: 16px;">
+                    </div>
+
+                    <div class="form-group" style="width: 100%;">
+                        <label for="subject"
+                            style="display: block; margin-bottom: 8px; font-weight: 600; color: #00d4ff;">נושא
+                            הפנייה:</label>
+                        <select id="subject" name="subject" required
+                            style="width: 100%; padding: 15px; border: 2px solid rgba(0, 212, 255, 0.3); border-radius: 10px; background: #2a3b5c; color: #fff; font-size: 16px;">
+                            <option value="" disabled selected>בחר נושא</option>
+                            <option value="content">שאלה לגבי תוכן</option>
+                            <option value="partnership">שיתוף פעולה / עיתונות</option>
+                            <option value="bug">דיווח על תקלה טכנית</option>
+                            <option value="other">אחר</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" style="width: 100%;">
+                        <label for="message"
+                            style="display: block; margin-bottom: 8px; font-weight: 600; color: #00d4ff;">ההודעה
+                            שלך:</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="פרט את שאלתך או בקשתך..."
+                            style="width: 100%; padding: 15px; border: 2px solid rgba(0, 212, 255, 0.3); border-radius: 10px; background: #2a3b5c; color: #fff; font-size: 16px; resize: vertical; min-height: 120px;"></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button form-submit-button"
+                        style="width: 100%; padding: 15px; margin-top: 10px;">שלח פנייה</button>
+
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 AI Navigator. כל הזכויות שמורות.</p>
+    </footer>
+
+    <!-- כפתור צ'אט דביק -->
+    <input type="checkbox" id="chatToggle" style="display: none;">
+    <label for="chatToggle" style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #ff8c00; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 1000; box-shadow: 0 4px 20px rgba(255, 140, 0, 0.4);">
+        <i class="fas fa-comments" style="color: #00d4ff; font-size: 24px;"></i>
+    </label>
+
+    <!-- חלון צ'אט דמה -->
+    <div id="chatWindow" style="position: fixed; bottom: 100px; right: 30px; width: 280px; height: 350px; background: #0f1a2e; border-radius: 20px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); border: 2px solid rgba(0, 212, 255, 0.3); display: none; flex-direction: column; z-index: 999;">
+        <div style="background: linear-gradient(135deg, #00d4ff 0%, #49c5b6 100%); padding: 15px 20px; border-radius: 18px 18px 0 0; color: white; font-weight: 600; display: flex; justify-content: space-between; align-items: center;">
+            <span>צ'אט תמיכה</span>
+            <label for="chatToggle" style="background: none; border: none; color: white; font-size: 18px; cursor: pointer;">&times;</label>
+        </div>
+        <div style="flex: 1; padding: 15px; overflow-y: auto; color: #e1e8f0;">
+            <div style="margin-bottom: 10px; padding: 8px 12px; border-radius: 12px; max-width: 90%; word-wrap: break-word; background: #2a3b5c; color: #e1e8f0; margin-right: auto; text-align: left; font-size: 0.9em;">
+                <strong>בוט תמיכה:</strong> שלום! איך אני יכול לעזור לך היום?
+            </div>
+        </div>
+        <div style="padding: 10px 12px; border-top: 1px solid rgba(0, 212, 255, 0.2); display: flex; gap: 6px;">
+            <input type="text" placeholder="הקלד הודעה..." style="flex: 1; padding: 6px 10px; border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 12px; background: #2a3b5c; color: white; outline: none; font-size: 0.85em;" disabled>
+            <button style="background: #00d4ff; border: none; color: white; padding: 6px 10px; border-radius: 12px; cursor: pointer; opacity: 0.6; font-size: 0.85em;">שלח</button>
+        </div>
+    </div>
+
+    <style>
+        #chatToggle:checked + label + #chatWindow {
+            display: flex !important;
+        }
+        
+        .menu-checkbox {
+            display: none;
+        }
+        
+        /* תפריט המבורגר - רק במסכים קטנים */
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: flex !important;
+                flex-direction: column;
+                position: absolute;
+                left: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 9999;
+                cursor: pointer;
+                padding: 8px;
+                background: #ff8c00;
+                border-radius: 6px;
+                border: 2px solid #fff;
+            }
+            
+            .hamburger-menu span {
+                width: 25px;
+                height: 3px;
+                background-color: #ffffff;
+                margin: 3px 0;
+                transition: 0.3s;
+                display: block;
+            }
+            
+            .menu-checkbox:checked ~ .main-nav {
+                display: flex !important;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 14, 21, 0.95);
+                flex-direction: column;
+                padding: 20px;
+                z-index: 9998;
+                border-radius: 0 0 10px 10px;
+            }
+            
+            .menu-checkbox:checked ~ .main-nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .menu-checkbox:checked ~ .main-nav ul li {
+                margin: 10px 0;
+                text-align: center;
+            }
+            
+            .menu-checkbox:checked ~ .hamburger-menu span:nth-child(1) {
+                transform: rotate(-45deg) translate(-6px, 6px);
+            }
+            
+            .menu-checkbox:checked ~ .hamburger-menu span:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .menu-checkbox:checked ~ .hamburger-menu span:nth-child(3) {
+                transform: rotate(45deg) translate(-6px, -6px);
+            }
+        }
+    </style>
+
+</body>
+
+</html>

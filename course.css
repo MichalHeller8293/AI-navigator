@@ -1,0 +1,306 @@
+/* הגדרות גלובליות ואיפוס */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f1419;
+    color: #ffffff;
+    direction: rtl;
+    text-align: right;
+    line-height: 1.6;
+}
+
+a {
+    color: #5d9cec;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* כותרת ראשית */
+header {
+    background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+    padding: 80px 50px 60px;
+    text-align: center;
+    border-bottom: 2px solid #49c5b6;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-size: 1.3em;
+    color: #49c5b6;
+    font-weight: 300;
+}
+
+/* מיכל ראשי */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* כותרות סקציות */
+.section-title {
+    font-size: 2.5em;
+    color: #ffffff;
+    text-align: center;
+    margin: 60px 0 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #49c5b6;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+/* רשת חברי הצוות */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.member-card {
+    background: linear-gradient(135deg, #1a2332 0%, #2a375a 100%);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(73, 197, 182, 0.2);
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(73, 197, 182, 0.2);
+}
+
+.member-card h3 {
+    font-size: 1.5em;
+    color: #49c5b6;
+    margin-bottom: 10px;
+}
+
+.member-card p {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.fun-fact {
+    background: rgba(73, 197, 182, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    font-style: italic;
+    color: #5d9cec;
+    border-right: 3px solid #49c5b6;
+}
+
+/* עיצוב תיבות הקורסים המפורטות */
+.course-detail-box {
+    background: linear-gradient(135deg, #1a2332 0%, #2a375a 100%);
+    border-radius: 15px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    border: 1px solid rgba(73, 197, 182, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-detail-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(73, 197, 182, 0.2);
+}
+
+.course-header {
+    background: linear-gradient(135deg, #ff8c00 0%, #e67e00 100%);
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.course-header h3 {
+    margin: 0;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.course-header span {
+    background: rgba(255,255,255,0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    backdrop-filter: blur(10px);
+}
+
+.course-content {
+    padding: 30px;
+    color: #ffffff;
+}
+
+.course-content p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #e1e8f0;
+    line-height: 1.7;
+}
+
+/* עיצוב טבלאות הסילבוס */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    text-align: right;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(73, 197, 182, 0.2);
+}
+
+table th {
+    background: linear-gradient(135deg, #49c5b6 0%, #5d9cec 100%);
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+table td {
+    color: #e1e8f0;
+    transition: background-color 0.3s;
+}
+
+table tr:hover td {
+    background: rgba(73, 197, 182, 0.1);
+}
+
+.tip-box {
+    background: linear-gradient(135deg, rgba(73, 197, 182, 0.1) 0%, rgba(93, 156, 236, 0.1) 100%);
+    padding: 20px;
+    border-right: 4px solid #49c5b6;
+    margin-top: 25px;
+    border-radius: 10px;
+    color: #e1e8f0;
+    font-style: italic;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.tip-box strong {
+    color: #49c5b6;
+}
+
+/* חותם איכות */
+.quality-seal {
+    background: linear-gradient(135deg, #2a375a 0%, #1a2332 100%);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 60px 0;
+    border: 2px solid #49c5b6;
+    box-shadow: 0 8px 25px rgba(73, 197, 182, 0.2);
+}
+
+.quality-seal h3 {
+    font-size: 2em;
+    color: #49c5b6;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.seal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.seal-item {
+    background: rgba(73, 197, 182, 0.1);
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(73, 197, 182, 0.3);
+    transition: transform 0.3s;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.seal-item:hover {
+    transform: scale(1.05);
+    background: rgba(73, 197, 182, 0.2);
+}
+
+.seal-item strong {
+    color: #49c5b6;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* עיצוב רספונסיבי */
+@media (max-width: 768px) {
+    header {
+        padding: 60px 20px 40px;
+    }
+    
+    header h1 {
+        font-size: 2.2em;
+    }
+    
+    .container {
+        padding: 20px 15px;
+    }
+    
+    .section-title {
+        font-size: 2em;
+    }
+    
+    .course-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .course-header span {
+        width: 100%;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+    
+    table th, table td {
+        padding: 10px 8px;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .seal-grid {
+        grid-template-columns: 1fr;
+    }
+}

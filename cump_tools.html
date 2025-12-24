@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כלי תכנות וסיוע בקוד באמצעות AI - AI Navigator</title>
+    <link rel="icon" type="image/x-icon" href="images/SMALL_LOGO.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="internal_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="images/LOGO_F.png" alt="Logo" class="logo-image">
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="dictionary.html">מילון מונחים</a></li>
+                <li><a href="item.html">תוצרים</a></li>
+                <li><a href="about.html">אודותינו</a></li>
+                <li><a href="contact.html">צור קשר</a></li>
+            </ul>
+        </nav>
+        </header>
+
+    <div class="page-container">
+       
+        <aside class="sidebar-nav">
+            <h3>סוגי בינה מלאכותית</h3>
+            <ul>
+                <li><a href="language.html"><i class="fas fa-comments"></i> מודלי שפה (LLMs)</a></li>
+                <li><a href="photo.html"><i class="fas fa-palette"></i> יצירת תמונות</a></li>
+                <li><a href="cump_tools.html" class="active"><i class="fas fa-code"></i> כלי תכנות</a></li>
+                <li><a href="music.html"><i class="fas fa-video"></i> כלי מוזיקה ווידאו</a></li>
+             
+            </ul>
+        </aside>
+
+        <main class="main-content">
+           
+            <section class="theory-section">
+                <h1>כלי תכנות וסיוע בקוד באמצעות AI (Code Generation)</h1>
+                <p style="margin-bottom: 20px; padding: 15px; background: rgba(0, 212, 255, 0.08); border-radius: 10px; border-right: 3px solid #00d4ff; color: #e1e8f0; line-height: 1.6;">
+                    כלי תכנות מבוססי AI הם מודלי שפה גדולים שהוכשרו במיוחד על קורפוסים עצומים של קוד ממגוון שפות תכנות. הם מסייעים למפתחים בהשלמת קוד, יצירת פונקציות שלמות, דיבוג, ושינוי מבני קוד (Refactoring).
+                </p>
+
+                <h3>מנגנון הפעולה: השלמה מבוססת הקשר</h3>
+                <div style="margin-bottom: 20px; padding: 15px; border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 10px; color: #e1e8f0; line-height: 1.6;">
+                    מודלי קידוד פועלים באמצעות ניתוח ההקשר המיידי של הקוד שאתה כותב (השורה הנוכחית, הפונקציה בה אתה נמצא, והקבצים הסמוכים), כדי לחזות את רצף הקוד הסביר ביותר הבא.
+                    <br><br>
+                    טרנספורמציה: המודלים ממירים שפה טבעית (הערות קוד או דרישות) לקוד תפעולי.
+                </div>
+
+                <div class="usage-section">
+                    <div class="usage-image">
+                        <img src="images/3.png" alt="תמונה 3" class="usage-img">
+                    </div>
+                    <div class="usage-content">
+                        <h3>שימושיות ויישומים מרכזיים</h3>
+                        <ul class="uses-list">
+                            <li>השלמה אוטומטית (Autocompletion): מציע שורות קוד שלמות או בלוקים שלמים תוך כדי הקלדה.</li>
+                            <li>יצירת דוקומנטציה: יצירת הערות ודוקומנטציה לפונקציות קיימות באופן אוטומטי.</li>
+                            <li>הסבר קוד: מפרש קוד קיים, כולל קוד ישן או לא מוכר.</li>
+                            <li>בדיקות יחידה (Unit Tests): יצירת בדיקות אוטומטיות לפונקציות קיימות.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="tools-section">
+                <h2>כלים מובילים לסיוע בתכנות</h2>
+                <div class="tools-cards-container">
+                   
+                    <div class="tool-card">
+                        <img src="images/GITHUB.png" alt="GitHub Copilot" style="width: 80px; height: 80px; margin: 0 auto 5px auto; display: block; object-fit: contain;">
+                        <h4>GitHub Copilot</h4>
+                        <p class="developer">פיתוח: GitHub (OpenAI Codex).</p>
+                        <p class="description">
+                            כלי הדגל, משתלב ב-VS Code ובסביבות פיתוח פופולריות רבות, מציע הצעות איכותיות בזמן אמת.
+                        </p>
+                        <a href="https://github.com/features/copilot" target="_blank" class="tool-link-button">השתמש בכלי</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <img src="images/AMAZON.png" alt="Amazon CodeWhisperer" style="width: 80px; height: 80px; margin: 0 auto 5px auto; display: block; object-fit: contain;">
+                        <h4>Amazon CodeWhisperer</h4>
+                        <p class="developer">פיתוח: Amazon Web Services (AWS).</p>
+                        <p class="description">
+                            מתמחה בסביבות AWS, כולל יכולות סריקת אבטחה מובנות והצעות קוד.
+                        </p>
+                        <a href="https://aws.amazon.com/codewhisperer/" target="_blank" class="tool-link-button">השתמש בכלי</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <img src="images/META.png" alt="Code Llama Meta" style="width: 80px; height: 80px; margin: 0 auto 5px auto; display: block; object-fit: contain;">
+                        <h4>Code Llama (Meta)</h4>
+                        <p class="developer">פיתוח: Meta AI (קוד פתוח).</p>
+                        <p class="description">
+                            מודל קוד פתוח הניתן להתאמה אישית והרצה מקומית, מצוין למחקר וליישומים ספציפיים בארגון.
+                        </p>
+                        <a href="https://ai.meta.com/blog/code-llama-large-language-model-coding/" target="_blank" class="tool-link-button">השתמש בכלי</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2>שאלות נפוצות (FAQ)</h2>
+                <ul class="faq-list" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 20px; padding: 15px; background: rgba(0, 212, 255, 0.08); border-radius: 10px; border-right: 3px solid #00d4ff;">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fas fa-question-circle" style="color: #00d4ff; margin-left: 10px; font-size: 1.2em;"></i>
+                            <strong style="color: #00d4ff; font-size: 1.1em;">איך המודל יודע לכתוב קוד שעובד?</strong>
+                        </div>
+                        <p style="color: #e1e8f0; line-height: 1.6;">
+                            במהלך האימון, המודל נחשף למיליארדי שורות קוד ממקורות פתוחים (כמו GitHub). הוא לומד לא רק את התחביר (Syntax) של השפה, אלא גם את הלוגיקה והתבניות הנפוצות לפתרון בעיות. זה מאפשר לו להציע פתרונות שלא רק עובדים מבחינת תחביר, אלא גם מיישמים לוגיקה נכונה.
+                        </p>
+                    </li>
+                    <li style="margin-bottom: 20px; padding: 15px; background: rgba(0, 212, 255, 0.08); border-radius: 10px; border-right: 3px solid #00d4ff;">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fas fa-question-circle" style="color: #00d4ff; margin-left: 10px; font-size: 1.2em;"></i>
+                            <strong style="color: #00d4ff; font-size: 1.1em;">האם המודל מבין את כל הפרויקט שלי?</strong>
+                        </div>
+                        <p style="color: #e1e8f0; line-height: 1.6;">
+                            כלי תכנות מודרניים משתמשים בטכנולוגיה שסורקת את הקבצים הפתוחים שלך כדי להבין את ההקשר (Context). אם הגדרת משתנה בקובץ אחד, המודל ידע להשתמש בו בקובץ אחר. זה מאפשר לו לספק הצעות רלוונטיות ומדויקות לפרויקט הספציפי שלך.
+                        </p>
+                    </li>
+                    <li style="margin-bottom: 20px; padding: 15px; background: rgba(0, 212, 255, 0.08); border-radius: 10px; border-right: 3px solid #00d4ff;">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fas fa-question-circle" style="color: #00d4ff; margin-left: 10px; font-size: 1.2em;"></i>
+                            <strong style="color: #00d4ff; font-size: 1.1em;">איך הוא עוזר למצוא באגים (Bugs)?</strong>
+                        </div>
+                        <p style="color: #e1e8f0; line-height: 1.6;">
+                            המודל משווה את הקוד שכתבת לתבניות של "קוד תקין" שלמד. הוא יכול לזהות חוסר עקביות או לוגיקה שעלולה להוביל לשגיאה בזמן אמת. למשל, הוא יכול לזהות שאתה מנסה לגשת למשתנה שלא הוגדר או לחלק באפס, ולהציע תיקונים.
+                        </p>
+                    </li>
+                    <li style="margin-bottom: 20px; padding: 15px; background: rgba(0, 212, 255, 0.08); border-radius: 10px; border-right: 3px solid #00d4ff;">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fas fa-question-circle" style="color: #00d4ff; margin-left: 10px; font-size: 1.2em;"></i>
+                            <strong style="color: #00d4ff; font-size: 1.1em;">מה זה "השלמה אוטומטית" (Autocomplete) של קוד?</strong>
+                        </div>
+                        <p style="color: #e1e8f0; line-height: 1.6;">
+                            בניגוד להשלמת מילים בטלפון, בינה מלאכותית יכולה להשלים פונקציות שלמות. היא חוזה מה תרצה לעשות בהתבסס על השם שנתת לפונקציה או על ההערות (Comments) שכתבת. למשל, אם תכתוב "פונקציה לחישוב ממוצע", המודל יכול לייצר את כל הקוד הנדרש.
+                        </p>
+                    </li>
+                    <li style="margin-bottom: 20px; padding: 15px; background: rgba(0, 212, 255, 0.08); border-radius: 10px; border-right: 3px solid #00d4ff;">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fas fa-question-circle" style="color: #00d4ff; margin-left: 10px; font-size: 1.2em;"></i>
+                            <strong style="color: #00d4ff; font-size: 1.1em;">האם הקוד שהמודל מייצר הוא תמיד מאובטח?</strong>
+                        </div>
+                        <p style="color: #e1e8f0; line-height: 1.6;">
+                            לא תמיד. המודל עלול להציע פתרונות שעובדים אך כוללים פרצות אבטחה ישנות שהוא ראה בטקסטים שעליהם התאמן. לכן תמיד נדרשת ביקורת אנושית - סקירת קוד (Code Review) שבה מתכנת אנושי עובר על הקוד שהופק כדי לוודא שהוא יעיל, קריא ובטוח לשימוש.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+           
+            <div class="next-step-nav">
+                <a href="photo.html">&larr; חזור ל: יצירת תמונות</a>
+                <a href="music.html">המשך לסוג הבא: כלי מוזיקה ווידאו &rarr;</a>
+            </div>
+
+            <footer style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(0, 212, 255, 0.2); background: transparent;">
+                <p style="background: transparent;">&copy; 2024 AI Navigator. כל הזכויות שמורות.</p>
+                <div style="display: flex; gap: 10px; background: transparent;">
+                    <a href="#" style="color: #00d4ff; font-size: 1.2em; background: transparent;"><i class="fab fa-facebook"></i></a>
+                    <a href="#" style="color: #00d4ff; font-size: 1.2em; background: transparent;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" style="color: #00d4ff; font-size: 1.2em; background: transparent;"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- כפתור צ'אט דביק -->
+    <input type="checkbox" id="chatToggle" style="display: none;">
+    <label for="chatToggle" style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #ff8c00; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 1000; box-shadow: 0 4px 20px rgba(255, 140, 0, 0.4);">
+        <i class="fas fa-comments" style="color: #00d4ff; font-size: 24px;"></i>
+    </label>
+
+    <!-- חלון צ'אט דמה -->
+    <div id="chatWindow" style="position: fixed; bottom: 100px; right: 30px; width: 280px; height: 350px; background: #0f1a2e; border-radius: 20px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); border: 2px solid rgba(0, 212, 255, 0.3); display: none; flex-direction: column; z-index: 999;">
+        <div style="background: linear-gradient(135deg, #00d4ff 0%, #49c5b6 100%); padding: 15px 20px; border-radius: 18px 18px 0 0; color: white; font-weight: 600; display: flex; justify-content: space-between; align-items: center;">
+            <span>צ'אט תמיכה</span>
+            <label for="chatToggle" style="background: none; border: none; color: white; font-size: 18px; cursor: pointer;">&times;</label>
+        </div>
+        <div style="flex: 1; padding: 15px; overflow-y: auto; color: #e1e8f0;">
+            <div style="margin-bottom: 10px; padding: 8px 12px; border-radius: 12px; max-width: 90%; word-wrap: break-word; background: #2a3b5c; color: #e1e8f0; margin-right: auto; text-align: left; font-size: 0.9em;">
+                <strong>בוט תמיכה:</strong> שלום! איך אני יכול לעזור לך היום?
+            </div>
+        </div>
+        <div style="padding: 10px 12px; border-top: 1px solid rgba(0, 212, 255, 0.2); display: flex; gap: 6px;">
+            <input type="text" placeholder="הקלד הודעה..." style="flex: 1; padding: 6px 10px; border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 12px; background: #2a3b5c; color: white; outline: none; font-size: 0.85em;" disabled>
+            <button style="background: #00d4ff; border: none; color: white; padding: 6px 10px; border-radius: 12px; cursor: pointer; opacity: 0.6; font-size: 0.85em;">שלח</button>
+        </div>
+    </div>
+
+    <style>
+        #chatToggle:checked + label + #chatWindow {
+            display: flex !important;
+        }
+        
+        .menu-checkbox {
+            display: none;
+        }
+        
+        #menu-toggle:checked ~ .main-nav {
+            display: flex !important;
+        }
+    </style>
+
+</body>
+</html>

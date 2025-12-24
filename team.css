@@ -1,0 +1,293 @@
+/* עיצוב דף הצוות - תואם לדף about */
+
+/* טקסט הקדמה */
+.main-content .intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    background: rgba(0, 212, 255, 0.08);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.main-content .intro-text p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #e1e8f0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* טקסט הצוות שלנו */
+.main-content .our {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.main-content .our p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #e1e8f0;
+}
+
+/* רשת כרטיסי חברי הצוות */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+/* כרטיס חבר צוות */
+.team-member-card {
+    background: rgba(42, 59, 92, 0.6);
+    border: 2px solid #00d4ff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    min-height: 350px;
+}
+
+.team-member-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00d4ff, #49c5b6, #00d4ff);
+    background-size: 200% 100%;
+    animation: borderGlow 3s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.team-member-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.4);
+    border-color: #33e0ff;
+}
+
+/* תמונת חבר הצוות */
+.member-image {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #00d4ff 0%, #49c5b6 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+}
+
+.member-image i {
+    font-size: 3.2em;
+    color: #ffffff;
+}
+
+/* שם חבר הצוות */
+.member-name {
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* תפקיד */
+.member-role {
+    color: #ffffff;
+    padding: 8px 15px;
+    border: 2px solid #ff8c00;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: inline-block;
+    background: transparent;
+}
+
+/* התמחות */
+.member-specialty {
+    color: #e1e8f0;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: rgba(0, 212, 255, 0.08);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    text-align: right;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+/* פרט מעניין */
+.member-fact {
+    color: #e1e8f0;
+    font-size: 0.95em;
+    line-height: 1.5;
+    font-style: italic;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border-right: 3px solid #49c5b6;
+}
+
+/* עיצוב הרשימה - רגיל */
+.main-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.main-content li {
+    background: rgba(42, 59, 92, 0.4);
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 12px;
+    border-right: 4px solid #00d4ff;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-content li:hover {
+    transform: translateX(5px);
+    background: rgba(0, 212, 255, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.2);
+}
+
+.main-content li strong {
+    color: #00d4ff;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* קישור יצירת קשר */
+.main-content p:last-of-type {
+    text-align: center;
+    margin-top: 40px;
+    padding: 25px;
+    background: rgba(0, 212, 255, 0.08);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.main-content p:last-of-type a {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff8c00 0%, #e67e00 100%);
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+}
+
+.main-content p:last-of-type a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 140, 0, 0.5);
+    background: linear-gradient(135deg, #e67e00 0%, #ff8c00 100%);
+}
+
+/* רספונסיביות */
+@media (max-width: 768px) {
+    /* צמצום שולים */
+    .page-container {
+        padding: 20px;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+    
+    /* כרטיסי צוות ברוחב מלא */
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .team-member-card {
+        padding: 20px;
+        min-height: auto;
+    }
+    
+    .member-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .member-image i {
+        font-size: 2.2em;
+    }
+    
+    .member-name {
+        font-size: 1.2em;
+    }
+    
+    .member-specialty {
+        min-height: auto;
+        padding: 12px;
+    }
+    
+    /* התאמת גופנים */
+    h1 {
+        font-size: 2em !important;
+    }
+    
+    h2 {
+        font-size: 1.6em !important;
+    }
+    
+    .intro-text {
+        padding: 15px;
+    }
+    
+    .main-content li {
+        max-width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member-card {
+        padding: 15px;
+    }
+    
+    .member-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .member-image i {
+        font-size: 1.8em;
+    }
+    
+    .member-name {
+        font-size: 1.1em;
+    }
+    
+    .member-role {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+    
+    .member-specialty {
+        font-size: 0.9em;
+    }
+}

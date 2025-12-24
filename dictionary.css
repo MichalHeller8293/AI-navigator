@@ -1,0 +1,118 @@
+.term-subtitle {
+    color: #00d4ff;
+    font-size: 0.8em;
+    margin: 0 0 15px 0;
+    font-weight: 500;
+}
+
+.space-card {
+    border: 2px solid #00d4ff;
+    border-radius: 15px;
+    padding: 15px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.space-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #00d4ff, #0f3460, #00d4ff);
+    background-size: 200% 100%;
+    animation: borderGlow 3s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.space-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 212, 255, 0.3);
+    border-color: #33e0ff;
+}
+
+.space-card p {
+    line-height: 1.4;
+}
+
+.space-card .space-title {
+    font-size: 1.3em;
+    margin: 20px 0 5px 0;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.ai-badge {
+    background: linear-gradient(45deg, #00d4ff, #0099cc);
+    color: #000;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.75em;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    /* רספונסיביות למילון מונחים */
+    .page-container {
+        padding: 20px;
+    }
+    
+    .main-content {
+        padding: 20px !important;
+        margin: 0 !important;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 15px 0;
+    }
+    
+    .space-card {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .space-title {
+        font-size: 1.2em !important;
+    }
+    
+    .term-subtitle {
+        font-size: 0.75em;
+    }
+    
+    .ai-badge {
+        font-size: 0.7em;
+        padding: 4px 10px;
+    }
+    
+    h1 {
+        font-size: 2.2em !important;
+    }
+    
+    h2 {
+        font-size: 1.4em !important;
+    }
+}
+
+
+
